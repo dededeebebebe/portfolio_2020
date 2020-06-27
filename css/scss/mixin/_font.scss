@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'objective';
+    src: url('./font/objective-bold-italic-webfont.woff') format(woff),
+         url('./font/objective-bold-italic-webfont.woff2') format(woff2);
+}
+@mixin objective {
+    font-family: 'objective', Arial, sans-serif;
+}
+@mixin font-noto {
+    font-family: 'Noto Sans JP', sans-serif;
+}

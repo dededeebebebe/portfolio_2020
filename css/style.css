@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'objective';
+  src: url("./font/objective-bold-italic-webfont.woff") format(woff), url("./font/objective-bold-italic-webfont.woff2") format(woff2);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  letter-spacing: 0.08em;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #262626;
+}
+
+.fv {
+  position: relative;
+  height: 100vh;
+}
+
+.fv .logo {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #FFFFFF;
+  font-size: 4.2rem;
+}
+
+.fv .outer {
+  position: relative;
+  height: 30%;
+}
+
+.fv .outer .tit {
+  position: absolute;
+  left: 50%;
+  font-family: 'objective', Arial, sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
