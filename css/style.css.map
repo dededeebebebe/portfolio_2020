@@ -8,7 +8,11 @@
         "scss/base/_base.scss",
         "scss/module/_fv.scss",
         "scss/module/_message.scss",
-        "scss/module/_skills.scss"
+        "scss/module/_skills.scss",
+        "scss/module/_works.scss",
+        "scss/module/_appeal.scss",
+        "scss/module/_history.scss",
+        "scss/module/_value.scss"
     ],
     "names": [],
     "file": "style.css"
