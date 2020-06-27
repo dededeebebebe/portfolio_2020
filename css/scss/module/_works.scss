@@ -1,0 +1,57 @@
+.works {
+    display: flex;
+    justify-content: center;
+    padding: 0 5vw;
+
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-left: $color-bk01 solid 1px;
+
+        .box-top {
+            .txt {
+                color: $color-primary;
+            }
+            .tit {
+                color: $color-bk01;
+                font-size: 5vw;
+            }
+        }
+        .list {
+            .item {
+                display: flex;
+                justify-content: space-around;
+                position: relative;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    width: 40%;
+
+                    img {
+                        display: inline;
+                        vertical-align: middle;
+                    }
+                }
+                .box {
+                    width: 40%;
+
+                    .txt {
+                        color: $color-bk03;
+                    }
+                }
+            }
+            .item:before {
+                content: '';
+                width: 20px;
+                height: 20px;
+                border-radius: 10px;
+                border: $color-primary solid 5px;
+                position: absolute;
+                top: 50%;
+                left: 0;
+            }
+        }
+    }
+}

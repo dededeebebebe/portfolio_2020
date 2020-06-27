@@ -150,4 +150,80 @@ body {
 .skills .outer._2 .tit {
   text-align: right;
 }
+
+.works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 5vw;
+}
+
+.works .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: #000000 solid 1px;
+}
+
+.works .wrap .box-top .txt {
+  color: #7AD6BB;
+}
+
+.works .wrap .box-top .tit {
+  color: #000000;
+  font-size: 5vw;
+}
+
+.works .wrap .list .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+}
+
+.works .wrap .list .item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+}
+
+.works .wrap .list .item a img {
+  display: inline;
+  vertical-align: middle;
+}
+
+.works .wrap .list .item .box {
+  width: 40%;
+}
+
+.works .wrap .list .item .box .txt {
+  color: #454545;
+}
+
+.works .wrap .list .item:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: #7AD6BB solid 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
 /*# sourceMappingURL=style.css.map */
