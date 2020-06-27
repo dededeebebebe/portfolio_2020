@@ -35,6 +35,119 @@ body {
 .fv .outer .tit {
   position: absolute;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-family: 'objective', Arial, sans-serif;
+  color: #7AD6BB;
+  font-size: 10vw;
+}
+
+.message {
+  padding: 10vw;
+}
+
+.message .tit {
+  font-size: 3vw;
+  text-align: center;
+}
+
+.message .txt {
+  font-size: 2.4rem;
+}
+
+.skills {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10vw;
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.skills .tit {
+  font-size: 8vw;
+}
+
+.skills .outer {
+  background-image: url(../img/bg-primary.png);
+  background-size: 30vw 30vw;
+  background-repeat: no-repeat;
+}
+
+.skills .outer .tit {
+  font-size: 4vw;
+  color: #454545;
+}
+
+.skills .outer .tit ._num {
+  font-size: 5vw;
+  color: #000000;
+}
+
+.skills .outer .tit ._char {
+  font-size: 2vw;
+}
+
+.skills .outer .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.skills .outer .inner img {
+  width: 40%;
+}
+
+.skills .outer .inner .box {
+  width: 40%;
+}
+
+.skills .outer .inner .box .txt {
+  font-size: 2rem;
+  color: #454545;
+}
+
+.skills .outer._1 h3 {
+  z-index: 200;
+}
+
+.skills .outer._1 img {
+  z-index: 100;
+}
+
+.skills .outer._1::before {
+  content: 'Portfolio';
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: sideways;
+  font-size: 15vw;
+  color: #FFFFFF;
+  font-family: 'objective', Arial, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.skills .outer._2 {
+  background-position-x: right;
+}
+
+.skills .outer._2 .tit {
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */

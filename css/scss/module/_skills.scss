@@ -1,0 +1,76 @@
+.skills {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vw;
+    color: $color-bk01;
+    background-color: $color-secondary;
+
+    .tit {
+        font-size: 8vw;
+    }
+
+    .outer {
+        background-image: url(../img/bg-primary.png);
+        background-size: 30vw 30vw;
+        background-repeat: no-repeat;
+
+        .tit {
+            font-size: 4vw;
+            color: $color-bk03;
+
+            ._num {
+                font-size: 5vw;
+                color: $color-bk01;
+            }
+            ._char {
+                font-size: 2vw;
+            }
+        }
+        .inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            img {
+                width: 40%;
+            }
+            .box {
+                width: 40%;
+
+                .txt {
+                    font-size: 2rem;
+                    color: $color-bk03;
+                }
+            }
+        }
+    }
+    .outer._1 {
+        h3 {
+            z-index: 200;
+        }
+        img {
+            z-index: 100;
+        }
+    }
+    .outer._1::before {
+        content: 'Portfolio';
+        writing-mode: vertical-rl;
+        text-orientation: sideways;
+        font-size: 15vw;
+        color: $color-wt01;
+        @include objective;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .outer._2 {
+        background-position-x: right;
+
+        .tit {
+            text-align: right;
+        }
+    }
+}

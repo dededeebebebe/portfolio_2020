@@ -16,7 +16,10 @@
         .tit {
             position: absolute;
             left: 50%;
+            transform: translate(-50%, -50%);
             @include objective;
+            color: $color-primary;
+            font-size: 10vw;
         }
     }
 }
