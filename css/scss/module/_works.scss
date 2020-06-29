@@ -14,8 +14,23 @@
                 color: $color-primary;
             }
             .tit {
-                color: $color-bk01;
-                font-size: 5vw;
+                position: relative;
+                z-index: 1;
+                font-size: 8vw;
+                @include objective;
+            }
+            .tit:after {
+                content: 'Works';
+                font-size: 8vw;
+                color: $color-wt01;
+                text-shadow: 4px 4px 0 $color-primary,
+                            -2px 2px 0 $color-primary,
+                            2px -2px 0 $color-primary,
+                            -2px -2px 0 $color-primary;
+                position: absolute;
+                z-index: -1;
+                top: -10px;
+                left: 10px;
             }
         }
         .list {

@@ -72,8 +72,22 @@ body {
   background-color: #F2F2F2;
 }
 
-.skills .tit {
+.skills-tit {
+  position: relative;
+  z-index: 1;
   font-size: 8vw;
+  font-family: 'objective', Arial, sans-serif;
+}
+
+.skills-tit:after {
+  content: 'Skills';
+  font-size: 8vw;
+  color: #F2F2F2;
+  text-shadow: 4px 4px 0 #7AD6BB, -2px 2px 0 #7AD6BB, 2px -2px 0 #7AD6BB, -2px -2px 0 #7AD6BB;
+  position: absolute;
+  z-index: -1;
+  top: -10px;
+  left: 10px;
 }
 
 .skills .outer {
@@ -180,8 +194,21 @@ body {
 }
 
 .works .wrap .box-top .tit {
-  color: #000000;
-  font-size: 5vw;
+  position: relative;
+  z-index: 1;
+  font-size: 8vw;
+  font-family: 'objective', Arial, sans-serif;
+}
+
+.works .wrap .box-top .tit:after {
+  content: 'Works';
+  font-size: 8vw;
+  color: #FFFFFF;
+  text-shadow: 4px 4px 0 #7AD6BB, -2px 2px 0 #7AD6BB, 2px -2px 0 #7AD6BB, -2px -2px 0 #7AD6BB;
+  position: absolute;
+  z-index: -1;
+  top: -10px;
+  left: 10px;
 }
 
 .works .wrap .list .item {
