@@ -257,4 +257,45 @@ body {
 .appeal {
   background-color: #F2F2F2;
 }
+
+.history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.history-tit {
+  position: relative;
+  z-index: 1;
+  font-size: 8vw;
+  font-family: 'objective', Arial, sans-serif;
+}
+
+.history-tit:after {
+  content: 'History';
+  font-size: 8vw;
+  color: #FFFFFF;
+  text-shadow: 4px 4px 0 #7AD6BB, -2px 2px 0 #7AD6BB, 2px -2px 0 #7AD6BB, -2px -2px 0 #7AD6BB;
+  position: absolute;
+  z-index: -1;
+  top: -10px;
+  left: 10px;
+}
+
+.history table th {
+  color: #7AD6BB;
+  border-top: solid 1px #7AD6BB;
+}
+
+.history table td {
+  color: #000000;
+  border-top: solid 1px #000000;
+}
 /*# sourceMappingURL=style.css.map */
