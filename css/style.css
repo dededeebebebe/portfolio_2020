@@ -298,4 +298,29 @@ body {
   color: #000000;
   border-top: solid 1px #000000;
 }
+
+.value {
+  background-color: #262626;
+}
+
+.value-tit {
+  color: #7AD6BB;
+}
+
+.value-txt {
+  color: #FFFFFF;
+}
+
+.value .outer {
+  background-image: url(../img/bg01@2x.jpg);
+}
+
+.value .outer-txt {
+  color: #FFFFFF;
+}
+
+.value .footer {
+  height: 30vh;
+  background-color: #7AD6BB;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,20 @@
+.value {
+    background-color: $color-bk02;
+
+    &-tit {
+        color: $color-primary;
+    }
+    &-txt {
+        color: $color-wt01;
+    }
+    .outer {
+        background-image: url(../img/bg01@2x.jpg);
+        &-txt {
+            color: $color-wt01;
+        }
+    }
+    .footer {
+        height: 30vh;
+        background-color: $color-primary;
+    }
+}
