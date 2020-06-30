@@ -4,8 +4,9 @@
 
     .logo {
         position: absolute;
-        top: 10px;
-        left: 0;
+        top: 20px;
+        left: 20px;
+        @include objective;
         color: $color-wt01;
         font-size: 4.2rem;
     }
@@ -17,14 +18,19 @@
     .outer {
         position: relative;
         height: 30%;
+        text-align: center;
 
         .tit {
             position: absolute;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            width: 100%;
+            transform: translateY(-50%);
             @include objective;
             color: $color-primary;
             font-size: 10vw;
+
+            @include media("sp") {
+                font-size: 15vw;
+            }
         }
     }
 }

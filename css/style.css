@@ -21,8 +21,9 @@ body {
 
 .fv .logo {
   position: absolute;
-  top: 10px;
-  left: 0;
+  top: 20px;
+  left: 20px;
+  font-family: 'objective', Arial, sans-serif;
   color: #FFFFFF;
   font-size: 4.2rem;
 }
@@ -35,16 +36,23 @@ body {
 .fv .outer {
   position: relative;
   height: 30%;
+  text-align: center;
 }
 
 .fv .outer .tit {
   position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   font-family: 'objective', Arial, sans-serif;
   color: #7AD6BB;
   font-size: 10vw;
+}
+
+@media only screen and (max-width: 767px) {
+  .fv .outer .tit {
+    font-size: 15vw;
+  }
 }
 
 .message {
