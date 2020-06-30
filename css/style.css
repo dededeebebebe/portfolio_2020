@@ -28,6 +28,14 @@ body {
   font-size: 4.2rem;
 }
 
+@media only screen and (max-width: 767px) {
+  .fv .logo {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
 .fv #youtube {
   width: 100%;
   height: 70%;
@@ -36,23 +44,16 @@ body {
 .fv .outer {
   position: relative;
   height: 30%;
-  text-align: center;
 }
 
 .fv .outer .tit {
   position: absolute;
-  width: 100%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-family: 'objective', Arial, sans-serif;
   color: #7AD6BB;
   font-size: 10vw;
-}
-
-@media only screen and (max-width: 767px) {
-  .fv .outer .tit {
-    font-size: 15vw;
-  }
 }
 
 .message {

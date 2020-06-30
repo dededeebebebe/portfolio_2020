@@ -9,6 +9,11 @@
         @include objective;
         color: $color-wt01;
         font-size: 4.2rem;
+
+        @include media("sp") {
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 
     #youtube {
@@ -18,19 +23,20 @@
     .outer {
         position: relative;
         height: 30%;
-        text-align: center;
+        // text-align: center;
 
         .tit {
             position: absolute;
-            width: 100%;
-            transform: translateY(-50%);
+            // width: 800%;
+            left: 40%;
+            transform: translate(-50%, -50%);
             @include objective;
             color: $color-primary;
             font-size: 10vw;
 
-            @include media("sp") {
-                font-size: 15vw;
-            }
+            // @include media("sp") {
+            //     font-size: 15vw;
+            // }
         }
     }
 }
