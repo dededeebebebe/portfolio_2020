@@ -7,8 +7,19 @@
     &-txt {
         color: $color-wt01;
     }
+
     .outer {
         background-image: url(../img/bg01@2x.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+    
+        .overlay {
+            background-color: $color-bk02;
+            opacity: 0.8;
+            height: 100%;
+        }
+
         &-txt {
             color: $color-wt01;
         }

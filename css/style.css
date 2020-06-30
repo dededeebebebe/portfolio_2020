@@ -313,6 +313,15 @@ body {
 
 .value .outer {
   background-image: url(../img/bg01@2x.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.value .outer .overlay {
+  background-color: #262626;
+  opacity: 0.8;
+  height: 100%;
 }
 
 .value .outer-txt {
