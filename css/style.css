@@ -27,6 +27,11 @@ body {
   font-size: 4.2rem;
 }
 
+.fv #youtube {
+  width: 100%;
+  height: 70%;
+}
+
 .fv .outer {
   position: relative;
   height: 30%;
