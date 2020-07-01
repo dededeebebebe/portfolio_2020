@@ -23,20 +23,14 @@
     .outer {
         position: relative;
         height: 30%;
-        // text-align: center;
 
         .tit {
             position: absolute;
-            // width: 800%;
             left: 40%;
             transform: translate(-50%, -50%);
             @include objective;
             color: $color-primary;
-            font-size: 10vw;
-
-            // @include media("sp") {
-            //     font-size: 15vw;
-            // }
+            font-size: 10.1912vw;
         }
     }
 }
