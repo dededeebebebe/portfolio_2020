@@ -14,6 +14,12 @@ body {
   color: #262626;
 }
 
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 1.4rem;
+  }
+}
+
 .fv {
   position: relative;
   height: 100vh;
@@ -38,12 +44,11 @@ body {
 
 .fv #youtube {
   width: 100%;
-  height: 70%;
+  height: 74%;
 }
 
 .fv .outer {
   position: relative;
-  height: 30%;
 }
 
 .fv .outer .tit {
@@ -57,16 +62,33 @@ body {
 }
 
 .message {
-  padding: 10vw;
+  padding: 14.64vw 2rem 19.6vw;
 }
 
 .message .tit {
-  font-size: 3vw;
+  font-size: 2.5vw;
   text-align: center;
+  padding: 2.968vh 0;
+}
+
+@media only screen and (max-width: 980px) {
+  .message .tit {
+    font-size: 5.333vw;
+  }
 }
 
 .message .txt {
   font-size: 2.4rem;
+  line-height: 2.0;
+  max-width: 722px;
+  margin: 0 auto;
+  padding: 2.343vh 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .message .txt {
+    font-size: 2rem;
+  }
 }
 
 .skills {

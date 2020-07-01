@@ -6,4 +6,8 @@ body {
     letter-spacing: 0.08em;
     @include font-noto;
     color: $color-bk02;
+
+    @include media("sp") {
+        font-size: 1.4rem;
+    }
 }
