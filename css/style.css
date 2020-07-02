@@ -395,12 +395,36 @@ body {
   background-color: #262626;
 }
 
-.value-tit {
+.value .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50vh;
+}
+
+.value .box .tit {
   color: #7AD6BB;
 }
 
-.value-txt {
+.value .box .txt {
   color: #FFFFFF;
+  font-size: 3.75vw;
+}
+
+@media only screen and (max-width: 767px) {
+  .value .box .txt {
+    font-size: 2.4rem;
+  }
 }
 
 .value .outer {
