@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10vw;
+    padding: 10vw 0;
     color: $color-bk01;
     background-color: $color-secondary;
 
@@ -13,7 +13,7 @@
         font-size: 8vw;
         @include objective;
     }
-    &-tit:after {
+    &-tit::before {
         content: 'Skills';
         font-size: 8vw;
         color: $color-secondary;
@@ -29,8 +29,9 @@
 
     .outer {
         background-image: url(../img/bg-primary.png);
-        background-size: 30vw 30vw;
+        background-size: 65.39vw 30vw;
         background-repeat: no-repeat;
+        padding: 0 5%;
 
         .tit {
             font-size: 2.5vw;
@@ -48,12 +49,24 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
+            
+            @include media("tb") {
+                flex-direction: column;
+            }
 
             img {
                 width: 40%;
+
+                @include media("tb") {
+                    width: 90%;
+                }
             }
             .box {
                 width: 40%;
+
+                @include media("tb") {
+                    width: 90%;
+                }
 
                 .txt {
                     font-size: 2rem;
@@ -87,6 +100,23 @@
 
         .tit {
             text-align: right;
+        }
+        .inner {
+            img {
+                order: 2;
+
+                @include media("tb") {
+                    order: 1;
+                }
+            }
+            .box {
+                order: 1;
+
+                @include media("tb") {
+                    order: 2;
+                }
+            }
+
         }
     }
 }
