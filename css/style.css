@@ -407,17 +407,33 @@ body {
   background-image: url(../img/bg01@2x.jpg);
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  height: 70vh;
 }
 
 .value .outer .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #262626;
   opacity: 0.8;
   height: 100%;
 }
 
 .value .outer-txt {
+  padding: 3vh 2rem;
+  max-width: 880px;
   color: #FFFFFF;
+  line-height: 2.0;
 }
 
 .value .footer {
