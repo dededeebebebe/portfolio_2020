@@ -71,9 +71,15 @@ body {
   padding: 2.968vh 0;
 }
 
+@media only screen and (max-width: 375px) {
+  .message .tit {
+    font-size: 2.4rem;
+  }
+}
+
 @media only screen and (max-width: 980px) {
   .message .tit {
-    font-size: 5.333vw;
+    font-size: calc(2rem + 1.333vw);
   }
 }
 

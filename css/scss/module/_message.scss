@@ -6,8 +6,11 @@
         text-align: center;
         padding: 2.968vh 0;
 
+        @include media("xs") {
+            font-size: 2.4rem;
+        }
         @include media("tb") {
-            font-size: 5.333vw;
+            font-size: calc(2rem + 1.333vw);
         }
     }
     .txt {
