@@ -1,7 +1,7 @@
 .works {
     display: flex;
     justify-content: center;
-    padding: 0 5vw;
+    padding: 10vw 5vw;
 
     .wrap {
         display: flex;
@@ -10,27 +10,45 @@
         border-left: $color-bk01 solid 1px;
 
         .box-top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
             .txt {
                 color: $color-primary;
             }
             .tit {
                 position: relative;
                 z-index: 1;
-                font-size: 8vw;
                 @include objective;
+                font-size: calc(40px + ((1vw - 3.75px) * 2.188));
+                
+                @include media("xs") {
+                    font-size: 4rem;
+                }
+                @include media("xl") {
+                    font-size: 4.69vw;
+                }
             }
             .tit:after {
                 content: 'Works';
-                font-size: 8vw;
+                font-size: calc(40px + ((1vw - 3.75px) * 2.188));
                 color: $color-wt01;
                 text-shadow: 4px 4px 0 $color-primary,
-                            -2px 2px 0 $color-primary,
-                            2px -2px 0 $color-primary,
-                            -2px -2px 0 $color-primary;
+                -2px 2px 0 $color-primary,
+                2px -2px 0 $color-primary,
+                -2px -2px 0 $color-primary;
                 position: absolute;
                 z-index: -1;
                 top: -10px;
                 left: 10px;
+
+                @include media("xs") {
+                    font-size: 4rem;
+                }
+                @include media("xl") {
+                    font-size: 4.69vw;
+                }
             }
         }
         .list {

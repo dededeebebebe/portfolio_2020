@@ -117,19 +117,43 @@ body {
 .skills-tit {
   position: relative;
   z-index: 1;
-  font-size: 8vw;
   font-family: 'objective', Arial, sans-serif;
+  font-size: calc(40px + ((1vw - 3.75px) * 2.188));
+}
+
+@media only screen and (max-width: 375px) {
+  .skills-tit {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .skills-tit {
+    font-size: 4.69vw;
+  }
 }
 
 .skills-tit::before {
   content: 'Skills';
-  font-size: 8vw;
+  font-size: calc(40px + ((1vw - 3.75px) * 2.188));
   color: #F2F2F2;
   text-shadow: 4px 4px 0 #7AD6BB, -2px 2px 0 #7AD6BB, 2px -2px 0 #7AD6BB, -2px -2px 0 #7AD6BB;
   position: absolute;
   z-index: -1;
   top: -10px;
   left: 10px;
+}
+
+@media only screen and (max-width: 375px) {
+  .skills-tit::before {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .skills-tit::before {
+    font-size: 4.69vw;
+  }
 }
 
 .skills .outer {
@@ -264,7 +288,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 5vw;
+  padding: 10vw 5vw;
 }
 
 .works .wrap {
@@ -281,6 +305,19 @@ body {
   border-left: #000000 solid 1px;
 }
 
+.works .wrap .box-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .works .wrap .box-top .txt {
   color: #7AD6BB;
 }
@@ -288,19 +325,43 @@ body {
 .works .wrap .box-top .tit {
   position: relative;
   z-index: 1;
-  font-size: 8vw;
   font-family: 'objective', Arial, sans-serif;
+  font-size: calc(40px + ((1vw - 3.75px) * 2.188));
+}
+
+@media only screen and (max-width: 375px) {
+  .works .wrap .box-top .tit {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .works .wrap .box-top .tit {
+    font-size: 4.69vw;
+  }
 }
 
 .works .wrap .box-top .tit:after {
   content: 'Works';
-  font-size: 8vw;
+  font-size: calc(40px + ((1vw - 3.75px) * 2.188));
   color: #FFFFFF;
   text-shadow: 4px 4px 0 #7AD6BB, -2px 2px 0 #7AD6BB, 2px -2px 0 #7AD6BB, -2px -2px 0 #7AD6BB;
   position: absolute;
   z-index: -1;
   top: -10px;
   left: 10px;
+}
+
+@media only screen and (max-width: 375px) {
+  .works .wrap .box-top .tit:after {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .works .wrap .box-top .tit:after {
+    font-size: 4.69vw;
+  }
 }
 
 .works .wrap .list .item {
@@ -347,6 +408,7 @@ body {
 }
 
 .appeal {
+  padding: 10vw 0;
   background-color: #F2F2F2;
 }
 
@@ -361,24 +423,49 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10vw 0;
 }
 
 .history-tit {
   position: relative;
   z-index: 1;
-  font-size: 8vw;
   font-family: 'objective', Arial, sans-serif;
+  font-size: calc(40px + ((1vw - 3.75px) * 2.188));
+}
+
+@media only screen and (max-width: 375px) {
+  .history-tit {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .history-tit {
+    font-size: 4.69vw;
+  }
 }
 
 .history-tit:after {
   content: 'History';
-  font-size: 8vw;
+  font-size: calc(40px + ((1vw - 3.75px) * 2.188));
   color: #FFFFFF;
   text-shadow: 4px 4px 0 #7AD6BB, -2px 2px 0 #7AD6BB, 2px -2px 0 #7AD6BB, -2px -2px 0 #7AD6BB;
   position: absolute;
   z-index: -1;
   top: -10px;
   left: 10px;
+}
+
+@media only screen and (max-width: 375px) {
+  .history-tit:after {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .history-tit:after {
+    font-size: 4.69vw;
+  }
 }
 
 .history table th {

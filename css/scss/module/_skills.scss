@@ -10,12 +10,19 @@
     &-tit {
         position: relative;
         z-index: 1;
-        font-size: 8vw;
         @include objective;
+        font-size: calc(40px + ((1vw - 3.75px) * 2.188));
+
+        @include media("xs") {
+            font-size: 4rem;
+        }
+        @include media("xl") {
+            font-size: 4.69vw;
+        }
     }
     &-tit::before {
         content: 'Skills';
-        font-size: 8vw;
+        font-size: calc(40px + ((1vw - 3.75px) * 2.188));
         color: $color-secondary;
         text-shadow: 4px 4px 0 $color-primary,
                     -2px 2px 0 $color-primary,
@@ -25,6 +32,13 @@
         z-index: -1;
         top: -10px;
         left: 10px;
+
+        @include media("xs") {
+            font-size: 4rem;
+        }
+        @include media("xl") {
+            font-size: 4.69vw;
+        }
     }
 
     .outer {
