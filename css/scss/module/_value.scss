@@ -10,12 +10,15 @@
 
         .tit {
             color: $color-primary;
+            @include objective;
+            font-size: 2.4rem;
         }
         .txt {
             color: $color-wt01;
-            font-size: 3.75vw;
+            // font-size: 3.75vw;
+            font-size: calc(24px + ((1vw - 3.75px) *  2.652));
 
-            @include media("sp") {
+            @include media("xs") {
                 font-size: 2.4rem;
             }
         }

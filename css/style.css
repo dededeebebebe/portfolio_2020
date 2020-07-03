@@ -414,14 +414,16 @@ body {
 
 .value .box .tit {
   color: #7AD6BB;
+  font-family: 'objective', Arial, sans-serif;
+  font-size: 2.4rem;
 }
 
 .value .box .txt {
   color: #FFFFFF;
-  font-size: 3.75vw;
+  font-size: calc(24px + ((1vw - 3.75px) *  2.652));
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 375px) {
   .value .box .txt {
     font-size: 2.4rem;
   }
