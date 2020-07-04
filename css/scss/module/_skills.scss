@@ -48,15 +48,35 @@
         padding: 0 5%;
 
         .tit {
-            font-size: 2.5vw;
+            font-size: calc(20px + ((1vw - 3.75px) * 1.326));
             color: $color-bk03;
 
+            @include media("xs") {
+                font-size: 2rem;
+            }
+            @include media("xl") {
+                font-size: 2.5vw;
+            }
+
             ._num {
-                font-size: 9.375vw;
+                font-size: calc(40px + ((1vw - 3.75px) * 6.629));
                 color: $color-bk01;
+
+                @include media("xs") {
+                    font-size: 4rem;
+                }
+                @include media("xl") {
+                    font-size: 7.812vw;
+                }
             }
             ._char {
-                font-size: 1.562vw;
+                font-size: 2rem;
+                
+                @include media("xs") {
+                }
+                @include media("xl") {
+                    font-size: 1.562vw;
+                }
             }
         }
         .inner {
@@ -84,7 +104,12 @@
 
                 .txt {
                     font-size: 2rem;
+                    line-height: 2;
                     color: $color-bk03;
+
+                    @include media("sp") {
+                        font-size: 1.6rem;;
+                    }
                 }
             }
         }

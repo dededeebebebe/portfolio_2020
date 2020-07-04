@@ -15,7 +15,6 @@
         }
         .txt {
             color: $color-wt01;
-            // font-size: 3.75vw;
             font-size: calc(24px + ((1vw - 3.75px) *  2.652));
 
             @include media("xs") {
@@ -29,7 +28,7 @@
         background-size: cover;
         background-position: center;
         height: 70vh;
-        
+
         .overlay {
             display: flex;
             flex-direction: column;
