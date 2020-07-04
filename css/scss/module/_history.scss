@@ -38,11 +38,24 @@
         }
     }
     table {
+        width: 62.5vw;
+        margin-top: 9.375vh;
+        border-collapse: separate;
+        border-spacing: 20px 0;
+
+        @include media("sp") {
+            width: 90vw;
+        }
+
         th {
+            width: 20%;
+            padding: 2rem 2rem;
+            margin-right: 10px;
             color: $color-primary;
             border-top: solid 1px $color-primary;
         }
         td {
+            padding: 2rem 0;
             color: $color-bk01;
             border-top: solid 1px $color-bk01;
         }

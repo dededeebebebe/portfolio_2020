@@ -505,12 +505,29 @@ body {
   }
 }
 
+.history table {
+  width: 62.5vw;
+  margin-top: 9.375vh;
+  border-collapse: separate;
+  border-spacing: 20px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .history table {
+    width: 90vw;
+  }
+}
+
 .history table th {
+  width: 20%;
+  padding: 2rem 2rem;
+  margin-right: 10px;
   color: #7AD6BB;
   border-top: solid 1px #7AD6BB;
 }
 
 .history table td {
+  padding: 2rem 0;
   color: #000000;
   border-top: solid 1px #000000;
 }
