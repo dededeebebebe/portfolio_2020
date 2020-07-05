@@ -20,6 +20,7 @@
             }
             .tit {
                 position: relative;
+                margin-top: 2rem;
                 z-index: 1;
                 @include objective;
                 font-size: calc(40px + ((1vw - 3.75px) * 2.188));
@@ -53,26 +54,49 @@
             }
         }
         .list {
+            margin-top: 7.03vh;
+
             .item {
                 display: flex;
                 justify-content: space-around;
                 position: relative;
+                margin-bottom: 12.345vw;
+
+                @include media("sp") {
+                    flex-direction: column;
+                    align-items: center;
+                }
 
                 a {
                     display: flex;
                     align-items: center;
+                    // text-align: center;
                     width: 40%;
 
+                    @include media("sp") {
+                        width: 100%;
+                    }
+                    
                     img {
                         display: inline;
                         vertical-align: middle;
+                        margin: 0 auto;
                     }
                 }
                 .box {
-                    width: 40%;
+                    width: 45%;
+
+                    @include media("sp") {
+                        width: 100%;
+                    }
 
                     .txt {
                         color: $color-bk03;
+                        margin-top: 2.343vw;
+
+                        @include media("xl") {
+                            line-height: 2;
+                        }
                     }
                 }
             }

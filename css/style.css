@@ -362,6 +362,7 @@ body {
 
 .works .wrap .box-top .tit {
   position: relative;
+  margin-top: 2rem;
   z-index: 1;
   font-family: 'objective', Arial, sans-serif;
   font-size: calc(40px + ((1vw - 3.75px) * 2.188));
@@ -402,6 +403,10 @@ body {
   }
 }
 
+.works .wrap .list {
+  margin-top: 7.03vh;
+}
+
 .works .wrap .list .item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -409,6 +414,19 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: relative;
+  margin-bottom: 12.345vw;
+}
+
+@media only screen and (max-width: 767px) {
+  .works .wrap .list .item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .works .wrap .list .item a {
@@ -421,17 +439,37 @@ body {
   width: 40%;
 }
 
+@media only screen and (max-width: 767px) {
+  .works .wrap .list .item a {
+    width: 100%;
+  }
+}
+
 .works .wrap .list .item a img {
   display: inline;
   vertical-align: middle;
+  margin: 0 auto;
 }
 
 .works .wrap .list .item .box {
-  width: 40%;
+  width: 45%;
+}
+
+@media only screen and (max-width: 767px) {
+  .works .wrap .list .item .box {
+    width: 100%;
+  }
 }
 
 .works .wrap .list .item .box .txt {
   color: #454545;
+  margin-top: 2.343vw;
+}
+
+@media only screen and (min-width: 1200px) {
+  .works .wrap .list .item .box .txt {
+    line-height: 2;
+  }
 }
 
 .works .wrap .list .item:before {
