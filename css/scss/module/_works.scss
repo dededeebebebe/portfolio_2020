@@ -7,7 +7,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 10vw 0;
+        padding: 4.765vw 0;
         border-left: $color-bk01 solid 1px;
 
         .box-top {
@@ -88,12 +88,23 @@
 
                     @include media("sp") {
                         width: 100%;
+                        padding: 0 2rem;
                     }
+                    .tit {
+                        font-size: 3.2rem;
 
+                        @include media("sp") {
+                            font-size: 2.4rem;
+                            margin-top: 10px;
+                        }
+                    }
                     .txt {
                         color: $color-bk03;
                         margin-top: 2.343vw;
 
+                        @include media("sp") {
+                            line-height: 2;
+                        }
                         @include media("xl") {
                             line-height: 2;
                         }
@@ -111,6 +122,29 @@
                 left: -25px;
                 transform: translateY(-50%);
                 background-color: $color-wt01;
+                
+                @include media("sp") {
+                    display: none;
+                }
+            }
+        }
+        .box-bottom {
+            width: 63.671vw;
+
+            @include media("tb") {
+                width: 85%;
+            }
+
+            .tit {
+                font-size: 3.2rem;
+                
+                @include media("sp") {
+                    font-size: 2.4rem;
+                }
+            }
+            .txt {
+                line-height: 2;
+                margin-top: 1.562vw;
             }
         }
     }
