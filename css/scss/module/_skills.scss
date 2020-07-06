@@ -40,6 +40,11 @@
             font-size: 4.69vw;
         }
     }
+    .list {
+        .item {
+            padding: 9.375vw 0;
+        }
+    }
 
     .outer {
         background-image: url(../img/bg-primary.png);
@@ -50,6 +55,7 @@
         .tit {
             font-size: calc(20px + ((1vw - 3.75px) * 1.326));
             color: $color-bk03;
+            padding: 3.9vw 0;
 
             @include media("xs") {
                 font-size: 2rem;
@@ -61,7 +67,8 @@
             ._num {
                 font-size: calc(40px + ((1vw - 3.75px) * 6.629));
                 color: $color-bk01;
-
+                margin-left: 20px;
+                
                 @include media("xs") {
                     font-size: 4rem;
                 }
@@ -71,6 +78,7 @@
             }
             ._char {
                 font-size: 2rem;
+                margin-left: 15px;
                 
                 @include media("xs") {
                 }
@@ -100,6 +108,7 @@
 
                 @include media("tb") {
                     width: 90%;
+                    padding: 5vw 0;
                 }
 
                 .txt {
@@ -114,25 +123,29 @@
             }
         }
     }
-    .outer._1 {
-        h3 {
-            z-index: 200;
-        }
-        img {
-            z-index: 100;
-        }
-    }
     .outer._1::before {
         content: 'Portfolio';
         writing-mode: vertical-rl;
         text-orientation: sideways;
-        font-size: 15vw;
+        font-size: 23.437vw;
         color: $color-wt01;
         @include objective;
         position: absolute;
         top: 0;
-        left: -5%;
+        left: -9%;
         z-index: 1;
+    }
+    .outer._1 {
+
+        .tit {
+            position: relative;
+            z-index: 200;
+            margin-left: 15%;
+        }
+        img {
+            position: relative;
+            z-index: 2;
+        }
     }
     .outer._2 {
         background-position-x: right;

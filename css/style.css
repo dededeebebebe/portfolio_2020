@@ -156,6 +156,10 @@ body {
   }
 }
 
+.skills .list .item {
+  padding: 9.375vw 0;
+}
+
 .skills .outer {
   background-image: url(../img/bg-primary.png);
   background-size: 65.39vw 30vw;
@@ -166,6 +170,7 @@ body {
 .skills .outer .tit {
   font-size: calc(20px + ((1vw - 3.75px) * 1.326));
   color: #454545;
+  padding: 3.9vw 0;
 }
 
 @media only screen and (max-width: 375px) {
@@ -183,6 +188,7 @@ body {
 .skills .outer .tit ._num {
   font-size: calc(40px + ((1vw - 3.75px) * 6.629));
   color: #000000;
+  margin-left: 20px;
 }
 
 @media only screen and (max-width: 375px) {
@@ -199,6 +205,7 @@ body {
 
 .skills .outer .tit ._char {
   font-size: 2rem;
+  margin-left: 15px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -244,6 +251,7 @@ body {
 @media only screen and (max-width: 980px) {
   .skills .outer .inner .box {
     width: 90%;
+    padding: 5vw 0;
   }
 }
 
@@ -259,27 +267,30 @@ body {
   }
 }
 
-.skills .outer._1 h3 {
-  z-index: 200;
-}
-
-.skills .outer._1 img {
-  z-index: 100;
-}
-
 .skills .outer._1::before {
   content: 'Portfolio';
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: sideways;
-  font-size: 15vw;
+  font-size: 23.437vw;
   color: #FFFFFF;
   font-family: 'objective', Arial, sans-serif;
   position: absolute;
   top: 0;
-  left: -5%;
+  left: -9%;
   z-index: 1;
+}
+
+.skills .outer._1 .tit {
+  position: relative;
+  z-index: 200;
+  margin-left: 15%;
+}
+
+.skills .outer._1 img {
+  position: relative;
+  z-index: 2;
 }
 
 .skills .outer._2 {
