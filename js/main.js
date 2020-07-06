@@ -10,9 +10,12 @@ function onYouTubeIframeAPIReady() {
     {
       videoId: 'GlhV-OKHecI', // YouTubeのvideoIdを入れる
       playerVars: {
-        loop: 1, // ループしない
-        controls: 0, // コントローラー表示
+        controls: 0, // コントローラー非表示
+        disablekb: 1, //キーボード操作無効   
         autoplay: 1, // 自動再生オフ
+        loop: 1, // ループさせる
+        iv_load_policy: 3, // アノテーションオフ
+        modestbranding: 1,  // ロゴを非表示
         rel: 0,  // オススメ動画を表示させない
         showinfo: 0 // タイトル表示
       },
@@ -34,7 +37,5 @@ $(document).ready(function(){
   centerPadding: "20%",
   centerMode: true,
   accessibility: false
-  // variableWidth: true
   });
 });
-
