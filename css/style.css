@@ -661,6 +661,14 @@ body {
   }
 }
 
+.value .slider {
+  overflow: hidden;
+}
+
+.value .slider img {
+  max-height: 600px;
+}
+
 .value .outer {
   background-image: url(../img/bg01@2x.jpg);
   background-size: cover;

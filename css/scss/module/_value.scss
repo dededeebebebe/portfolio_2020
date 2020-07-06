@@ -22,6 +22,13 @@
             }
         }
     }
+    .slider {
+        overflow: hidden;
+
+        img {
+            max-height: 600px;
+        }
+    }
 
     .outer {
         background-image: url(../img/bg01@2x.jpg);

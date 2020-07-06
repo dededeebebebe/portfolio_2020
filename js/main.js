@@ -1,13 +1,3 @@
-// slick
-$(document).ready(function(){
-    $('.slider').slick({
-    autoplay: true,
-    slidesToShow: 2,
-    centerMode: true,
-    variableWidth: true
-    });
-  });
-
 // YouTube
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
@@ -35,3 +25,16 @@ function onYouTubeIframeAPIReady() {
 function onPlayerReady(event) {
   event.target.setVolume(0);
 }
+// slick
+$(document).ready(function(){
+  $('.slider').slick({
+  autoplay: true,
+  autoplaySpeed: 2000,
+  slidesToShow: 1,
+  centerPadding: "20%",
+  centerMode: true,
+  accessibility: false
+  // variableWidth: true
+  });
+});
+
